@@ -1,10 +1,10 @@
-# ODK Central Backend
+# andikaCollect Backend
 
 ![Platform](https://img.shields.io/badge/platform-Node.js-blue.svg)
 [![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build status](https://circleci.com/gh/getodk/central-backend.svg?style=shield)](https://circleci.com/gh/getodk/central-backend)
 
-ODK Central Backend is the API server for [ODK](https://getodk.org/). It's built with Node.js and Postgres.
+andikaCollect Backend is the API server for [ODK](https://getodk.org/). It's built with Node.js and Postgres.
 
 This repository contains only the code for the backend API server: [Central Frontend](https://github.com/getodk/central-frontend) holds frontend code, and [Central](https://github.com/getodk/central) contains both the Docker-based production deployment infrastructure for the combined frontend/backend, as well as project management and issue tickets.
 
@@ -14,9 +14,9 @@ This repository contains only the code for the backend API server: [Central Fron
 
 We need your help to make this project as useful as possible! Please see the [Contribution Guide](https://github.com/getodk/central-backend/blob/master/CONTRIBUTING.md) for detailed information on discussion forums, project policies, code guidelines, and an overview of the software architecture.
 
-## Using ODK Central Backend
+## Using andikaCollect Backend
 
-For information on how to install and deploy ODK Central Backend for use as an ODK server, please see [these instructions](https://github.com/getodk/central) on the ODK Central repository. For information on how to set up a development environment for this server to help contribute to it, please skip to the next section.
+For information on how to install and deploy andikaCollect Backend for use as an andikaCollect server, please see [these instructions](https://github.com/getodk/central) on the andikaCollect repository. For information on how to set up a development environment for this server to help contribute to it, please skip to the next section.
 
 ### Command line scripts
 
@@ -24,7 +24,7 @@ A number of operational tasks (creating accounts, setting passwords, etc) may be
 
 ### Accessing the API
 
-ODK Central Backend is, first and foremost, a RESTful HTTP API server that manages Users, Forms, Submissions, and other objects necessary to run an ODK data collection campaign. This API is used by the bundled frontend web interface to form a complete user-installable server solution, but that API can also be used on its own with or without the frontend to programmatically manage a data collection project.
+andikaCollect Backend is, first and foremost, a RESTful HTTP API server that manages Users, Forms, Submissions, and other objects necessary to run an andikaCollect data collection campaign. This API is used by the bundled frontend web interface to form a complete user-installable server solution, but that API can also be used on its own with or without the frontend to programmatically manage a data collection project.
 
 We provide a full documentation of the API in the standard [OpenAPI](https://www.openapis.org/) format. You can find a plain version of that documentation [here](https://github.com/getodk/central-backend/blob/master/docs/api.yaml) in the repository, or you can access the [published version](https://docs.getodk.org/central-api/) for a friendlier interface. Please see the [makefile](Makefile) and [Contribution Guide](https://github.com/getodk/central-backend/blob/master/CONTRIBUTING.md) for information on building the documentation locally.
 
